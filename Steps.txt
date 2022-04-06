@@ -1,0 +1,18 @@
+1. Create Docker-compose file
+
+2. Setup nginx server
+- Add nginx service config in docker-compose file.
+- Create nginx folder with nginx file to points to php index files
+
+3. Setup php service
+- Create a folder named dockerfiles to hold the php.dockerfile
+- Generate php docker image layers
+- Add php service config in docker-compose file.
+- Modify the nginx.conf to suit the exposed port of the php image
+
+4. Setup mariadb
+- Add mariadb config in docker-compose file
+
+5. Setup composer
+- Create custom composer docker file
+- Add composer logic to docker-compose
